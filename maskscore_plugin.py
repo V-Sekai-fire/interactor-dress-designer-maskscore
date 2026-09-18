@@ -8,7 +8,7 @@ import random
 garment_id = "sample_garment_id"
 image_path = f"C:/contract-manifest/data/{garment_id}.png"
 
-# Import image into Marvelous Designer
+# Import image into the garment simulator
 option = ApiTypes.ImportExportOption()
 option.bImportGarment = True
 
