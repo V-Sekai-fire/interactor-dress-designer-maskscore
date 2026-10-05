@@ -1,17 +1,19 @@
-# Dress Designer MaskScore
+# interactor-dress-designer-maskscore
 
-This is a project for automating the creation of MaskScore/EditScore datasets using a
-pattern-drafting garment simulator.
+Scripts that sample garments from a second-hand fashion dataset and drive a pattern-drafting garment simulator to rebuild them as USD.
 
-## Purpose
-Automate the modeling of second-hand garments from the `chibifire/zenodo-second-hand-fashion-v3` dataset using the simulator's Python API.
+## What it is for
 
-## Workflow
-1. Shuffle and sample garments from the HuggingFace dataset.
-2. Import reference images into the simulator via Python API.
-3. Automate pattern drafting and simulation.
-4. Export as OpenUSD and CineForm MKV.
-5. Score with EditScore/MaskScore.
+It is the start of a pipeline for building MaskScore and EditScore datasets from real garments.
+One script samples garment records from the dataset's parquet, and two run inside the simulator's
+scripting host to import a reference image and export the garment as a USD file. The scoring step
+is not part of it.
 
-## Repo Manifest
-This repo is linked to `C:/contract-manifest` via repo-manifest.
+## Run
+
+`python dataset_sampler.py` reads the dataset from its workspace checkout. The other two scripts
+run from the simulator's own scripting console.
+
+## Licence
+
+This repository does not state a licence.
