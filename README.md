@@ -16,4 +16,4 @@ run from the simulator's own scripting console.
 
 ## Licence
 
-This repository does not state a licence.
+MIT. See [LICENSE](LICENSE).
